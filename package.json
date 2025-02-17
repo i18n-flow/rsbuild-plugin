@@ -1,7 +1,7 @@
 {
-  "name": "rsbuild-plugin-example",
-  "version": "0.0.0",
-  "repository": "https://github.com/rspack-contrib/rsbuild-plugin-template",
+  "name": "@i18n-flow/rsbuild-plugin",
+  "version": "0.0.1-alpha.1",
+  "repository": "https://github.com/i18n-flow/rsbuild-plugin",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -27,6 +27,9 @@
   "simple-git-hooks": {
     "pre-commit": "npm run lint:write"
   },
+  "dependencies": {
+    "ts-morph": "^10.0.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@playwright/test": "^1.50.1",
@@ -38,7 +41,8 @@
     "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "@rsbuild/core": "1.x"
+    "@rsbuild/core": "1.x",
+    "ts-node": "^7.0.0"
   },
   "peerDependenciesMeta": {
     "@rsbuild/core": {

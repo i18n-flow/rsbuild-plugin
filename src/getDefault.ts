@@ -41,7 +41,7 @@ export function getExportDefaultFromAST(filePath: string): {
       if (!initializer) continue;
       switch (initializer.getKind()) {
         case SyntaxKind.StringLiteral:
-          obj[name] = initializer.getLiteralValue();
+          obj[name] = initializer.getText().slice(1, -1);
           break;
         case SyntaxKind.NumericLiteral:
           obj[name] = Number(initializer.getText());

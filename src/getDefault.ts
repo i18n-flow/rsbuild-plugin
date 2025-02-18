@@ -1,4 +1,4 @@
-import { type ObjectLiteralElementLike, Project, SyntaxKind } from 'ts-morph';
+import { Project, SyntaxKind } from 'ts-morph';
 
 export function getExportDefaultFromAST(filePath: string): {
   [key: string]: string | number | boolean;
